@@ -1,0 +1,9 @@
+﻿<select class="form-control" id="people">
+    @if (ViewData["PeopleNames"] != null)
+    {
+        foreach (var item in ViewData["PeopleNames"] as IEnumerable<SelectListItem>)
+        {
+            <option>@item.Text</option>
+        }
+    }
+</select>
